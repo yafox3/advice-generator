@@ -2,4 +2,4 @@
 
 # Functionality
 This app generates random advices on click for you.
-If you like the advice, you can click the pause button and write it down somewhere for yourself.
+If you liked the advice, you can click copy the text by clicking on it
