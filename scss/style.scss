@@ -32,6 +32,8 @@ body {
     position: relative;
     box-shadow: 30px 30px 70px #0000000c;
 
+    
+
 	// .box__container
 	&__container {
         max-width: 490px;
@@ -59,15 +61,27 @@ body {
         line-height: 2.8rem;
         margin-bottom: 2rem;
         font-weight: 800;
-        user-select:text;
+        cursor: pointer;
 	}
 
 	// .box__pause
 
 	&__pause {
         margin-bottom: 2rem;
+        position: relative;
 	}
 
+    &__copy {
+        font-size: .8rem;
+        color: hsla(193, 38%, 86%);
+        opacity: .2;
+        transition: opacity .5s ease-in-out;
+
+    }
+    .active {
+        opacity: 1;
+    }
+    
 	// .box__dice
 
 	&__dice {

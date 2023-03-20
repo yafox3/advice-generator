@@ -75,10 +75,20 @@ body {
   line-height: 2.8rem;
   margin-bottom: 2rem;
   font-weight: 800;
-  user-select: text;
+  cursor: pointer;
 }
 .box__pause {
   margin-bottom: 2rem;
+  position: relative;
+}
+.box__copy {
+  font-size: 0.8rem;
+  color: hsl(193, 38%, 86%);
+  opacity: 0.2;
+  transition: opacity 0.5s ease-in-out;
+}
+.box .active {
+  opacity: 1;
 }
 .box__dice {
   display: inline-flex;
