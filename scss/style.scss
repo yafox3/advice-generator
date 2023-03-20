@@ -18,11 +18,12 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 0 15px;
 }
 
 // ===== BOX ==============================================
 .box {
-    max-width: 550px;
+    max-width: 580px;
     width: 100%;
     text-align: center;
     padding: 3.2rem 0;
@@ -35,6 +36,7 @@ body {
 	&__container {
         max-width: 490px;
         width: 100%;
+        padding: 0 10px;
         margin: 0 auto;
 	}
 
@@ -88,4 +90,13 @@ body {
             box-shadow: 1px 1px 45px hsl(150, 100%, 66%);
         }
 	}
+
+    @media (max-width: 525px) {
+        &__title {
+            font-size: 0.7rem;
+        }
+        &__text {
+            font-size: 1.5rem;
+        }
+    }
 }

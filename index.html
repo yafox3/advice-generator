@@ -19,7 +19,13 @@
 
                 <div class="box__title">advice <span id="advice-id"></span></div>
                 <div class="box__text"><q id="advice">Click on the button to generate an advice</q></div>
-                <div class="box__pause"><img src="img/pattern-divider-desktop.svg" alt=""></div>
+                <div class="box__pause">
+                    <picture>
+                        <source srcset="/img/pattern-divider-mobile.svg 1x" media="(max-width: 525px)">
+                        <source srcset="/img/pattern-divider-desktop.svg">
+                        <img src="/img/pattern-divider-desktop.svg" alt="">
+                    </picture>
+                </div>
                 <a href="#" class="box__dice">
                     <img src="img/icon-dice.svg" alt="">
                 </a>
