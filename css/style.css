@@ -33,6 +33,7 @@ body {
   font-size: 28px;
   font-family: Manrope;
   background: hsl(218, 23%, 16%);
+  user-select: none;
 }
 
 .wrapper {
@@ -72,6 +73,7 @@ body {
   line-height: 2.8rem;
   margin-bottom: 2rem;
   font-weight: 800;
+  user-select: text;
 }
 .box__pause {
   margin-bottom: 2rem;
