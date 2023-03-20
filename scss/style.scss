@@ -5,3 +5,85 @@ html,body{height:100%;width:100%;font-size:100%;line-height:1;font-size:14px;-ms
 a:focus,a:active{outline: none;}
 
 
+body {
+    font-size: 28px;
+    font-family: Manrope;
+    background: hsl(218, 23%, 16%);
+}
+
+.wrapper {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// ===== BOX ==============================================
+.box {
+    max-width: 550px;
+    width: 100%;
+    text-align: center;
+    padding: 3.2rem 0;
+    border-radius: 20px;
+    background: hsl(217, 19%, 24%);
+    position: relative;
+    box-shadow: 30px 30px 70px #0000000c;
+
+	// .box__container
+	&__container {
+        max-width: 490px;
+        width: 100%;
+        margin: 0 auto;
+	}
+
+	// .box__title
+
+	&__title {
+        font-size: 0.9rem;
+        letter-spacing: 0.4rem;
+        color: hsl(150, 100%, 66%);
+        text-transform: uppercase;
+        margin-bottom: 2rem;
+        font-weight: 600;
+
+	}
+
+	// .box__text
+	&__text {
+        letter-spacing: .1rem;
+        color: hsl(193, 38%, 86%);
+        line-height: 2.8rem;
+        margin-bottom: 2rem;
+        font-weight: 800;
+	}
+
+	// .box__pause
+
+	&__pause {
+        margin-bottom: 2rem;
+	}
+
+	// .box__dice
+
+	&__dice {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background: hsl(150, 100%, 66%);
+
+        position: absolute;
+        top: 100%;
+        left: 50%;
+
+        transform: translate3d(-50%, -50%, 0);
+        transition: box-shadow .2s ease-in-out;
+
+        &:hover {
+            box-shadow: 1px 1px 45px hsl(150, 100%, 66%);
+        }
+	}
+}
