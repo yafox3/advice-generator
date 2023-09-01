@@ -11,6 +11,7 @@ function getRequest(url) {
 
 // generate advice onclick
 generateBtn.addEventListener('click', (e) => {
+    e.preventDefault()
     const advice = getRequest(ADVICE_URL);
     const adviceId = document.querySelector('#advice-id');
 
